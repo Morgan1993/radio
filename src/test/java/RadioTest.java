@@ -98,4 +98,28 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldNotSetCurrentStation10() {
+        Radio radio = new Radio();
+        radio.setCurrentStation(5);
+        radio.setCurrentStation(10);
+
+        int expected = 5;
+        int actual = radio.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldNotSetCurrentVolume11() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(5);
+        radio.setCurrentVolume(11);
+
+        int expected = 5;
+        int actual = radio.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
