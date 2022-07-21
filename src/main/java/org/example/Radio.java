@@ -3,13 +3,22 @@ package org.example;
 public class Radio {
     private int currentStation;
     private int currentVolume;
+    private int stationAmount;
+
+    public Radio(int stationAmount) {
+        this.stationAmount = stationAmount;
+    }
+
+    public Radio() {
+        stationAmount = 10;
+    }
 
     public int getCurrentStation() {
         return currentStation;
     }
 
     public void setCurrentStation(int newStation) {
-        if (newStation > 9 || newStation < 0) {
+        if (newStation > stationAmount - 1 || newStation < 0) {
             return;
         }
         currentStation = newStation;
@@ -20,14 +29,14 @@ public class Radio {
     }
 
     public void setCurrentVolume(int newVolume) {
-        if (newVolume > 10 || newVolume < 0) {
+        if (newVolume > 100 || newVolume < 0) {
             return;
         }
         currentVolume = newVolume;
     }
 
     public void next() {
-        if (currentStation == 9) {
+        if (currentStation == stationAmount - 1) {
             currentStation = 0;
         } else {
             currentStation++;
@@ -36,14 +45,14 @@ public class Radio {
 
     public void prev() {
         if (currentStation == 0) {
-            currentStation = 9;
+            currentStation = stationAmount - 1;
         } else {
             currentStation--;
         }
     }
 
     public void increaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume < 100) {
             currentVolume++;
         }
     }
