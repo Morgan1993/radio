@@ -122,4 +122,28 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldNotSetNegativeCurrentStation() {
+        Radio radio = new Radio();
+        radio.setCurrentStation(5);
+        radio.setCurrentStation(-1);
+
+        int expected = 5;
+        int actual = radio.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldNotSetNegativeCurrentVolume() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(5);
+        radio.setCurrentVolume(-8);
+
+        int expected = 5;
+        int actual = radio.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
