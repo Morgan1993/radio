@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9997c038-4d50-40e4-b0ab-861b06d300b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
@@ -47,13 +46,12 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.shouldNotSetNegativeCurrentVolume">
-    <configuration name="RadioTest.shouldDecreaseVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RadioTest.shouldSetCurrentStation25WhenStationAmount30">
+    <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="radio" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldDecreaseVolume" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,11 +86,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetCurrentStation10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldSetCurrentStation25WhenStationAmount30" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="radio" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetCurrentStation10" />
+      <option name="METHOD_NAME" value="shouldSetCurrentStation25WhenStationAmount30" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RadioTest.shouldSetCurrentStation25WhenStationAmount30" />
+        <item itemvalue="JUnit.RadioTest" />
         <item itemvalue="JUnit.RadioTest.shouldNotSetNegativeCurrentVolume" />
         <item itemvalue="JUnit.RadioTest.shouldNotSetNegativeCurrentStation" />
         <item itemvalue="JUnit.RadioTest.shouldNotSetCurrentVolume11" />
-        <item itemvalue="JUnit.RadioTest.shouldSetCurrentStation10" />
-        <item itemvalue="JUnit.RadioTest.shouldDecreaseVolume" />
       </list>
     </recent_temporary>
   </component>
